@@ -36,7 +36,7 @@ target_include_directories(c2ffi PUBLIC
   ${LLVM_INCLUDE_DIRS}
   ${SOURCE_ROOT}/src/include
   )
-target_link_libraries(c2ffi PUBLIC /usr/local/llvm10/lib/libclang-cpp.so LLVM)
+target_link_libraries(c2ffi PUBLIC clang-cpp LLVM)
 
 set(APP_BIN_DIR "${CMAKE_BINARY_DIR}/bin")
 set_target_properties(c2ffi PROPERTIES
