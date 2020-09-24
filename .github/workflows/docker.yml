@@ -1,0 +1,13 @@
+name: Deploy
+
+on: [push, pull_request, repository_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Run Docker
+      run: |
+        docker build --rm -t c2ffi .
