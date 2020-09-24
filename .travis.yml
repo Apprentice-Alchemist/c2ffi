@@ -12,11 +12,11 @@ addons:
       - g++-4.9
       - cmake
       - cmake-data
-      - llvm-3.7-dev
-      - clang-3.7
-      - clang++-3.7
-      - clang-3.7-dev 
-      - clang++-3.7-dev 
+      - llvm-10.0-dev
+      - clang-10.0
+      - clang++-10.0
+      - clang-10.0-dev 
+      - clang++-10.0-dev 
 
 compiler:
   - gcc
